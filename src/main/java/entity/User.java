@@ -301,4 +301,11 @@ public class User {
     public void setUserSkillsById(Collection<UserSkill> userSkillsById) {
         this.userSkillsById = userSkillsById;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                '}';
+    }
 }
