@@ -5,6 +5,9 @@ import java.sql.Date;
 import java.util.Collection;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "User.findByEmail",query = "SELECT u from User u where u.email = :email")
+})
 public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
